@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 12px;
+}
+
+.icon {
+    font-size: 28px;
+    background-color: #8B4513;
+    color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #f8f9ff;
+    transition: all 0.2s ease;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: white;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3d8b40;
+}
+
+.result {
+    margin-top: 32px;
+    padding: 24px;
+    background-color: #e8f5e8;
+    border-radius: 12px;
+    border: 1px solid #c8e6c9;
+}
+
+.result-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2e7d32;
+    padding: 8px 0;
+    line-height: 1.4;
+}
+
+.result-text:first-child {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px;
+    }
+    
+    .container {
+        padding: 24px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+    
+    input[type="number"] {
+        padding: 14px 16px;
+        font-size: 16px;
+    }
+    
+    button {
+        padding: 14px;
+        font-size: 16px;
+    }
+    
+    .result-text {
+        font-size: 16px;
+    }
+    
+    .result-text:first-child {
+        font-size: 18px;
+    }
+}
